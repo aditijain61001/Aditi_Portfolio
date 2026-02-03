@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditi Jain - Behavioral Scientist x UX </title>
+    <title>Aditi Jain | Applied Behavioral Scientist</title>
     <style>
         * {
             margin: 0;
@@ -327,42 +327,15 @@
             overflow: hidden;
         }
 
-        /* Subtle Instagram-like backgrounds */
-        .post-image.project-1 {
-            background: linear-gradient(135deg, #2d3436, #1e272e);
-        }
-
-        .post-image.project-2 {
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-        }
-
-        .post-image.project-3 {
-            background: linear-gradient(135deg, #353b48, #2c2c54);
-        }
-
-        .post-image.project-4 {
-            background: linear-gradient(135deg, #40407a, #2c2c54);
-        }
-
-        .post-image.project-5 {
-            background: linear-gradient(135deg, #2c3e50, #2c2c54);
-        }
-
-        .post-image.project-6 {
-            background: linear-gradient(135deg, #192a56, #273c75);
-        }
-
-        .post-image.project-7 {
-            background: linear-gradient(135deg, #2d3436, #636e72);
-        }
-
-        .post-image.project-8 {
-            background: linear-gradient(135deg, #40407a, #706fd3);
-        }
-
-        .post-image.project-9 {
-            background: linear-gradient(135deg, #3d3d6b, #505086);
-        }
+        .post-image.project-1 { background: linear-gradient(135deg, #2d3436, #1e272e); }
+        .post-image.project-2 { background: linear-gradient(135deg, #2c3e50, #34495e); }
+        .post-image.project-3 { background: linear-gradient(135deg, #353b48, #2c2c54); }
+        .post-image.project-4 { background: linear-gradient(135deg, #40407a, #2c2c54); }
+        .post-image.project-5 { background: linear-gradient(135deg, #2c3e50, #2c2c54); }
+        .post-image.project-6 { background: linear-gradient(135deg, #192a56, #273c75); }
+        .post-image.project-7 { background: linear-gradient(135deg, #2d3436, #636e72); }
+        .post-image.project-8 { background: linear-gradient(135deg, #40407a, #706fd3); }
+        .post-image.project-9 { background: linear-gradient(135deg, #3d3d6b, #505086); }
 
         .post-overlay {
             position: absolute;
@@ -606,7 +579,7 @@
         }
 
         .philosophy-questions li:before {
-            content: "•";
+            content: "→";
             position: absolute;
             left: 0;
             color: #667eea;
@@ -702,47 +675,8 @@
             font-size: 18px;
         }
 
-        /* Philosophy Modal */
-        .philosophy-modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.95);
-            z-index: 3000;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .philosophy-modal.active {
-            display: flex;
-            animation: fadeIn 0.3s;
-        }
-
-        .philosophy-modal-content {
-            max-width: 600px;
-            background: #1a1a1a;
-            border-radius: 16px;
-            padding: 32px;
-            position: relative;
-        }
-
-        .philosophy-modal-close {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            width: 32px;
-            height: 32px;
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            border-radius: 50%;
-            color: white;
-            cursor: pointer;
-            font-size: 20px;
-        }
-
-        /* Figma Link Button */
-        .figma-link-btn {
+        /* Link Button */
+        .link-btn {
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -757,7 +691,7 @@
             margin-top: 16px;
         }
 
-        .figma-link-btn:hover {
+        .link-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
@@ -888,83 +822,6 @@
             color: rgba(255, 255, 255, 0.5);
         }
 
-        /* Tab Content Container */
-        .tab-content {
-            min-height: 400px;
-        }
-
-        /* Skills Section Styles */
-        .skills-section {
-            padding: 20px 0;
-        }
-
-        .skills-container {
-            display: grid;
-            gap: 32px;
-        }
-
-        .skill-category {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 24px;
-            transition: all 0.3s;
-        }
-
-        .skill-category:hover {
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
-        }
-
-        .category-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-
-        .category-icon {
-            font-size: 24px;
-        }
-
-        .category-header h3 {
-            font-size: 18px;
-            font-weight: 500;
-            color: rgba(255, 255, 255, 0.95);
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .skill-tag {
-            padding: 6px 14px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 20px;
-            font-size: 13px;
-            color: rgba(255, 255, 255, 0.8);
-            transition: all 0.3s;
-            cursor: default;
-        }
-
-        .skill-tag:hover {
-            background: rgba(102, 126, 234, 0.2);
-            border-color: rgba(102, 126, 234, 0.5);
-            color: #fff;
-            transform: translateY(-2px);
-        }
-
-        .skill-tag.premium {
-            background: linear-gradient(45deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
-            border-color: rgba(102, 126, 234, 0.3);
-            color: #fff;
-            font-weight: 500;
-        }
-
         /* Process Section */
         .process-section {
             display: none;
@@ -1037,13 +894,13 @@
     <div class="profile-section">
         <div class="profile-header">
             <div class="profile-pic-container" style="flex-shrink: 0;">
-    <div class="profile-pic" style="background: #ffffff; padding: 0; overflow: hidden;">
-        <img src="Logo2.png" alt="Aditi Jain" style="width: 100%; height: 100%; object-fit: contain;">
-    </div>
-</div>
+                <div class="profile-pic" style="background: #ffffff; padding: 0; overflow: hidden;">
+                    <img src="Logo2.png" alt="Aditi Jain" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            </div>
             <div class="profile-info">
                 <div class="profile-username">
-                    <h1 class="username">aditi_jain.ux</h1>
+                    <h1 class="username">aditi_jain</h1>
                     <div class="cta-buttons">
                         <button class="btn btn-primary" onclick="window.open('mailto:asvm61001@gmail.com')">Get in Touch</button>
                         <button class="btn btn-secondary" onclick="window.open('https://www.linkedin.com/in/aditijain61001/')">LinkedIn</button>
@@ -1060,48 +917,48 @@
                     </div>
                     <div class="stat">
                         <div class="stat-number">30%</div>
-                        <div class="stat-label">impact achieved</div>
+                        <div class="stat-label">business impact</div>
                     </div>
                 </div>
                 <div class="profile-bio">
-                    <div class="bio-name">Behavioral Scientist 🧠 × UX Designer 🎨</div>
+                    <div class="bio-name">Applied Behavioral Scientist 🧠</div>
                     <div class="bio-text">
-                        <span class="bio-tagline">"The best designs aren't just beautiful—they're behavioral."</span><br><br>
-                        I believe great design happens when we stop forcing humans into frameworks and start building frameworks around humans.<br><br>
-                        🎓 MSc Behavioral Science @ London School of Economics<br>
-                        💼 SAANS.AI | METVY | Research Projects<br>
-                        🎯 Pioneering Behavioral Design Systems
+                        <span class="bio-tagline">"I figure out why people do what they do, then help build things that actually work for them."</span><br><br>
+                        Most research tells you what happened. I dig into the why, and more importantly, what to do about it. I've worked across healthcare AI, EdTech, and fintech, always trying to bridge the gap between human psychology and real world products.<br><br>
+                        🎓 MSc Behavioral Science from LSE (Distinction)<br>
+                        💼 Experience in Healthcare AI, EdTech, FinTech<br>
+                        🎯 Focused on turning insights into outcomes
                     </div>
-                    <a href="#philosophy" class="bio-link">Read My Design Philosophy ↓</a>
+                    <a href="#philosophy" class="bio-link">More about how I work ↓</a>
                 </div>
             </div>
         </div>
 
-        <!-- Highlights/Skills -->
+        <!-- Highlights -->
         <div class="highlights">
-            <div class="highlight" onclick="openPhilosophyModal('behavioral')">
-                <div class="highlight-circle">🧠</div>
-                <div class="highlight-label">Behavioral</div>
-            </div>
-            <div class="highlight" onclick="openPhilosophyModal('cultural')">
-                <div class="highlight-circle">🌏</div>
-                <div class="highlight-label">Cultural</div>
-            </div>
-            <div class="highlight" onclick="openPhilosophyModal('experimental')">
+            <div class="highlight" onclick="openPhilosophyModal('research')">
                 <div class="highlight-circle">🔬</div>
-                <div class="highlight-label">Experimental</div>
+                <div class="highlight-label">Research</div>
             </div>
-            <div class="highlight" onclick="openPhilosophyModal('ai-human')">
-                <div class="highlight-circle">🤖</div>
-                <div class="highlight-label">AI-Human</div>
+            <div class="highlight" onclick="openPhilosophyModal('strategy')">
+                <div class="highlight-circle">📊</div>
+                <div class="highlight-label">Strategy</div>
             </div>
-            <div class="highlight" onclick="openPhilosophyModal('systems')">
-                <div class="highlight-circle">⚡</div>
-                <div class="highlight-label">Systems</div>
-            </div>
-            <div class="highlight" onclick="openPhilosophyModal('future')">
+            <div class="highlight" onclick="openPhilosophyModal('product')">
                 <div class="highlight-circle">🚀</div>
-                <div class="highlight-label">Future</div>
+                <div class="highlight-label">Product</div>
+            </div>
+            <div class="highlight" onclick="openPhilosophyModal('insights')">
+                <div class="highlight-circle">💡</div>
+                <div class="highlight-label">Insights</div>
+            </div>
+            <div class="highlight" onclick="openPhilosophyModal('experimentation')">
+                <div class="highlight-circle">🧪</div>
+                <div class="highlight-label">Testing</div>
+            </div>
+            <div class="highlight" onclick="openPhilosophyModal('impact')">
+                <div class="highlight-circle">📈</div>
+                <div class="highlight-label">Impact</div>
             </div>
         </div>
 
@@ -1127,219 +984,222 @@
                     <rect y="6.5" width="5.5" height="5.5"/>
                     <rect x="6.5" y="6.5" width="5.5" height="5.5"/>
                 </svg>
-                PROCESS
+                HOW I WORK
             </div>
             <div class="tab" onclick="switchTab(this, 'achievements')">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5">
                     <path d="M6 1L7.5 4.5L11 5L8.5 7.5L9 11L6 9.5L3 11L3.5 7.5L1 5L4.5 4.5L6 1Z"/>
                 </svg>
-                ACHIEVEMENTS
+                RESULTS
             </div>
         </div>
 
         <!-- Posts Grid -->
-        <div class="posts-grid" id="postsGrid">
-            <!-- Projects will be dynamically loaded here -->
-        </div>
+        <div class="posts-grid" id="postsGrid"></div>
 
-        <!-- Process Section - Hidden by default -->
+        <!-- Process Section -->
         <div class="process-section" id="processSection" style="display: none;">
             <div style="max-width: 975px; margin: 0 auto;">
                 <h2 style="text-align: center; margin-bottom: 40px; font-size: 28px; font-weight: 300; color: #fff;">
-                    My Design Process: <span style="background: linear-gradient(45deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">People First, Always</span>
+                    How I Approach Problems
                 </h2>
                 
                 <div style="display: grid; gap: 24px;">
-                    <!-- Step 1 -->
                     <div style="display: flex; gap: 24px; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px;">
                         <div style="font-size: 48px; min-width: 80px; text-align: center;">🔍</div>
                         <div>
-                            <h3 style="color: #667eea; margin-bottom: 8px;">1. Deep Research & Understanding</h3>
-                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">I start with in-depth primary and secondary research. Understanding users isn't about assumptions—it's about listening, observing, and discovering what they truly need. Every design decision begins with real human insights.</p>
+                            <h3 style="color: #667eea; margin-bottom: 8px;">1. Start with the real problem</h3>
+                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">I've learned that the problem people describe is rarely the actual problem. Through interviews, surveys, and just watching how people behave, I try to find what's really going on. Sometimes this completely changes the direction of a project, and that's usually a good thing.</p>
                         </div>
                     </div>
                     
-                    <!-- Step 2 -->
                     <div style="display: flex; gap: 24px; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px;">
                         <div style="font-size: 48px; min-width: 80px; text-align: center;">🧠</div>
                         <div>
-                            <h3 style="color: #667eea; margin-bottom: 8px;">2. Behavioral Science + UX Wireframing</h3>
-                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">I create wireframes that merge behavioral science principles with UX best practices. My toolkit includes choice architecture, cognitive load theory, and nudge techniques—always applied ethically.</p>
+                            <h3 style="color: #667eea; margin-bottom: 8px;">2. Figure out the behavioral mechanics</h3>
+                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">Once I understand the problem, I map out what's actually driving the behavior. What biases are at play? What's the friction? What would make this easier? This is where my behavioral science training comes in handy. I'm not guessing; I'm applying frameworks that have been tested and validated.</p>
                         </div>
                     </div>
                     
-                    <!-- Step 3 -->
                     <div style="display: flex; gap: 24px; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px;">
-                        <div style="font-size: 48px; min-width: 80px; text-align: center;">💚</div>
+                        <div style="font-size: 48px; min-width: 80px; text-align: center;">🎯</div>
                         <div>
-                            <h3 style="color: #667eea; margin-bottom: 8px;">3. Ethical & Transparent Design</h3>
-                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;"><strong>This is non-negotiable:</strong> People first, always. I ensure designs are transparent, respect user autonomy, and never cause harm. No dark patterns, ever.</p>
+                            <h3 style="color: #667eea; margin-bottom: 8px;">3. Design something that could work</h3>
+                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">This is where insights become recommendations. Whether it's a product feature, a communication strategy, or a process change, I try to make sure every suggestion is practical and implementable. Ideas that stay on slides don't help anyone.</p>
                         </div>
                     </div>
                     
-                    <!-- Step 4 -->
                     <div style="display: flex; gap: 24px; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px;">
-                        <div style="font-size: 48px; min-width: 80px; text-align: center;">🎨</div>
+                        <div style="font-size: 48px; min-width: 80px; text-align: center;">🧪</div>
                         <div>
-                            <h3 style="color: #667eea; margin-bottom: 8px;">4. Prototype Development</h3>
-                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">Transform insights and wireframes into high-fidelity prototypes. Every interaction is purposeful, every micro-animation has meaning. The goal: interfaces that feel intuitive, not just impressive.</p>
+                            <h3 style="color: #667eea; margin-bottom: 8px;">4. Test before committing</h3>
+                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">I'm a big believer in testing. A/B tests, small pilots, quick experiments. It's much better to find out something doesn't work with 50 users than with 50,000. Plus, testing often reveals things you never would have predicted.</p>
                         </div>
                     </div>
                     
-                    <!-- Step 5 -->
                     <div style="display: flex; gap: 24px; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px;">
-                        <div style="font-size: 48px; min-width: 80px; text-align: center;">📊</div>
+                        <div style="font-size: 48px; min-width: 80px; text-align: center;">📈</div>
                         <div>
-                            <h3 style="color: #667eea; margin-bottom: 8px;">5. User Testing & Iteration</h3>
-                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">Watch how real users engage with the prototype. Numbers tell one story, but observing someone struggle with a button placement tells another. I iterate based on both quantitative data and qualitative insights.</p>
+                            <h3 style="color: #667eea; margin-bottom: 8px;">5. Measure what matters</h3>
+                            <p style="color: rgba(255,255,255,0.9); line-height: 1.6;">I focus on behavioral outcomes, not just satisfaction surveys. Did people actually change what they do? Did adoption increase? Did the problem get solved? That's what I care about, and that's what I try to measure.</p>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Core Principles -->
                 <div style="margin-top: 40px; padding: 24px; background: linear-gradient(135deg, rgba(102,126,234,0.1), rgba(118,75,162,0.1)); border-radius: 12px; text-align: center;">
-                    <h3 style="color: #fff; margin-bottom: 16px; font-size: 20px;">My Core Principle</h3>
+                    <h3 style="color: #fff; margin-bottom: 16px; font-size: 20px;">What I've learned</h3>
                     <p style="color: rgba(255,255,255,0.95); font-size: 18px; font-style: italic; line-height: 1.6;">
-                        "Design is a responsibility. Every interface we create shapes behavior, influences decisions, and impacts lives. My commitment: Use behavioral science to empower, not exploit. Create transparency, not confusion. Build trust, not addiction."
+                        "The best solutions usually feel almost too simple. That's because they work with how people naturally think and behave, instead of fighting against it."
                     </p>
-                    <p style="color: #667eea; font-weight: 600; margin-top: 16px; font-size: 16px;">— People First, Always —</p>
                 </div>
             </div>
         </div>
 
-        <!-- Achievements Section - Hidden by default -->
+        <!-- Achievements Section -->
         <div class="achievements-section" id="achievementsSection" style="display: none;">
             <div class="achievements-container">
                 <div class="achievement-card">
                     <div class="achievement-icon">🎓</div>
                     <h3>MSc Behavioral Science</h3>
                     <p class="achievement-detail">London School of Economics</p>
-                    <p class="achievement-meta">Sept 2024 - Sept 2025</p>
+                    <p class="achievement-meta">Graduated with Distinction</p>
                 </div>
                 
                 <div class="achievement-card">
                     <div class="achievement-icon">📊</div>
-                    <h3>30% Task Reduction</h3>
-                    <p class="achievement-detail">SAANS.AI Healthcare Dashboard</p>
-                    <p class="achievement-meta">Through behavioral interventions</p>
+                    <h3>30% Faster Tasks</h3>
+                    <p class="achievement-detail">SAANS.AI Healthcare Platform</p>
+                    <p class="achievement-meta">Through simplified interface design</p>
                 </div>
                 
                 <div class="achievement-card">
                     <div class="achievement-icon">🚀</div>
-                    <h3>100+ Active Users</h3>
-                    <p class="achievement-detail">METVY Platform</p>
-                    <p class="achievement-meta">Scaled in 2-month sprint</p>
+                    <h3>0 to 100+ Users</h3>
+                    <p class="achievement-detail">METVY EdTech Platform</p>
+                    <p class="achievement-meta">In just two months</p>
                 </div>
                 
                 <div class="achievement-card">
                     <div class="achievement-icon">📈</div>
-                    <h3>20% Satisfaction Increase</h3>
-                    <p class="achievement-detail">Gamification Strategy</p>
-                    <p class="achievement-meta">Through habit formation nudges</p>
+                    <h3>20% More Engagement</h3>
+                    <p class="achievement-detail">Behavioral Nudge Strategy</p>
+                    <p class="achievement-meta">Using gamification and habit design</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">🔬</div>
+                    <h3>Novel Research Finding</h3>
+                    <p class="achievement-detail">MSc Dissertation</p>
+                    <p class="achievement-meta">72% indirect media effect discovered</p>
                 </div>
                 
                 <div class="achievement-card">
                     <div class="achievement-icon">👥</div>
-                    <h3>70+ Alumni Meetup</h3>
-                    <p class="achievement-detail">First-ever event organized</p>
-                    <p class="achievement-meta">30% increase in attendance</p>
-                </div>
-                
-                <div class="achievement-card">
-                    <div class="achievement-icon">🏆</div>
-                    <h3>SARC Core Member</h3>
-                    <p class="achievement-detail">OP Jindal Global University</p>
-                    <p class="achievement-meta">Led 15+ member team</p>
+                    <h3>Cross-functional Teams</h3>
+                    <p class="achievement-detail">15+ people led</p>
+                    <p class="achievement-meta">Engineers, designers, stakeholders</p>
                 </div>
             </div>
         </div>
 
-        <!-- Skills Section - Always Visible -->
+        <!-- Skills Section -->
         <div class="skills-section" style="margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.1);">
-            <h2 style="text-align: center; margin-bottom: 30px; font-size: 24px; font-weight: 300;">Skills & Expertise</h2>
+            <h2 style="text-align: center; margin-bottom: 30px; font-size: 24px; font-weight: 300;">What I'm good at</h2>
             <div class="skills-container">
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">🧠</span>
-                        <h3>Behavioral & Research</h3>
+                        <span class="category-icon">🔬</span>
+                        <h3>Research</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">User Journey Mapping</span>
-                        <span class="skill-tag">Mixed-Methods Research</span>
+                        <span class="skill-tag premium">Mixed Methods Research</span>
+                        <span class="skill-tag premium">Experimental Design</span>
+                        <span class="skill-tag">User Interviews</span>
+                        <span class="skill-tag">Survey Design</span>
                         <span class="skill-tag">A/B Testing</span>
-                        <span class="skill-tag">Usability Testing</span>
-                        <span class="skill-tag">Behavioral Modeling</span>
-                        <span class="skill-tag">Choice Architecture</span>
-                        <span class="skill-tag">Consumer Insights</span>
-                        <span class="skill-tag">Experimental Design</span>
-                        <span class="skill-tag">Statistical Modeling</span>
+                        <span class="skill-tag">Statistical Analysis (STATA, R)</span>
+                        <span class="skill-tag">Panel Data Analysis</span>
+                        <span class="skill-tag">Qualitative Coding</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <div class="category-header">
-                        <span class="category-icon">🎨</span>
-                        <h3>Design & Prototyping</h3>
+                        <span class="category-icon">🧠</span>
+                        <h3>Behavioral Science</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Wireframing</span>
-                        <span class="skill-tag">Prototyping</span>
-                        <span class="skill-tag">Information Architecture</span>
-                        <span class="skill-tag">Data Visualization</span>
-                        <span class="skill-tag">Design Systems</span>
-                        <span class="skill-tag">Micro-interactions</span>
-                        <span class="skill-tag">Responsive Design</span>
-                        <span class="skill-tag">Visual Design</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">🤖</span>
-                        <h3>AI & Technology</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AI-driven Behavioral Modeling</span>
-                        <span class="skill-tag">ChatGPT</span>
-                        <span class="skill-tag">Claude</span>
-                        <span class="skill-tag">Conversational UI</span>
-                        <span class="skill-tag">Human-AI Collaboration</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-header">
-                        <span class="category-icon">🛠️</span>
-                        <h3>Tools & Software</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag premium">Figma</span>
-                        <span class="skill-tag premium">Adobe Creative Suite</span>
-                        <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">Google Analytics</span>
-                        <span class="skill-tag">Qualtrics</span>
-                        <span class="skill-tag">STATA</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">Photoshop</span>
-                        <span class="skill-tag">MS Office</span>
-                        <span class="skill-tag">Google Suite</span>
-                        <span class="skill-tag">Prolific</span>
-                        <span class="skill-tag">MTurk</span>
+                        <span class="skill-tag premium">Choice Architecture</span>
+                        <span class="skill-tag premium">Nudge Design</span>
+                        <span class="skill-tag">Cognitive Bias Mapping</span>
+                        <span class="skill-tag">Decision Frameworks</span>
+                        <span class="skill-tag">Behavioral Interventions</span>
+                        <span class="skill-tag">Habit Formation</span>
+                        <span class="skill-tag">Gamification</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
                     <div class="category-header">
                         <span class="category-icon">💡</span>
-                        <h3>Strategic & Management</h3>
+                        <h3>Strategy and Insights</h3>
                     </div>
                     <div class="skill-tags">
-                        <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">Decision-Making Framework</span>
+                        <span class="skill-tag premium">Consumer Insights</span>
                         <span class="skill-tag">Market Research</span>
-                        <span class="skill-tag">Hypothesis Testing</span>
-                        <span class="skill-tag">Quantitative Research</span>
-                        <span class="skill-tag">Qualitative Research</span>
+                        <span class="skill-tag">Competitive Analysis</span>
+                        <span class="skill-tag">Journey Mapping</span>
+                        <span class="skill-tag">Persona Development</span>
+                        <span class="skill-tag">Strategic Recommendations</span>
+                        <span class="skill-tag">Stakeholder Presentations</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🚀</span>
+                        <h3>Product Work</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Product Strategy</span>
+                        <span class="skill-tag">Feature Prioritization</span>
+                        <span class="skill-tag">Prototyping (Figma)</span>
+                        <span class="skill-tag">Wireframing</span>
+                        <span class="skill-tag">Usability Testing</span>
+                        <span class="skill-tag">Agile Sprints</span>
+                        <span class="skill-tag">Cross-functional Collaboration</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🛠️</span>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag premium">STATA</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Qualtrics</span>
+                        <span class="skill-tag">Prolific / MTurk</span>
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">MS Office / Google Suite</span>
+                        <span class="skill-tag">Miro</span>
+                        <span class="skill-tag">AI Tools (Claude, GPT, Perplexity)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <span class="category-icon">🏥</span>
+                        <h3>Industries I've worked in</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Healthcare AI</span>
+                        <span class="skill-tag">EdTech</span>
+                        <span class="skill-tag">FinTech</span>
+                        <span class="skill-tag">Startups</span>
+                        <span class="skill-tag">Human AI Interaction</span>
                     </div>
                 </div>
             </div>
@@ -1350,46 +1210,46 @@
     <div class="philosophy-section" id="philosophy">
         <div class="philosophy-container">
             <div class="philosophy-header">
-                <div class="section-label">MY PHILOSOPHY</div>
-                <h2 class="philosophy-title">Design Through a Behavioral Lens</h2>
+                <div class="section-label">MY APPROACH</div>
+                <h2 class="philosophy-title">How I think about problems</h2>
             </div>
             
             <div class="philosophy-posts">
                 <div class="philosophy-post">
                     <div class="post-header">
-                        <div class="post-avatar">🧠</div>
+                        <div class="post-avatar">🔬</div>
                         <div class="post-meta">
-                            <strong>The Behavioral Lens</strong>
-                            <span>Why I Ask Different Questions</span>
+                            <strong>The Research Part</strong>
+                            <span>Finding what others miss</span>
                         </div>
                     </div>
                     <div class="post-content">
-                        <p>"What if I told you that the best designs aren't just beautiful—they're behavioral?"</p>
-                        <p>Most designers ask 'How can we make this look good?' But coming from behavioral science at LSE, I ask:</p>
+                        <p>"Data tells you what happened. Behavioral science helps you understand why, and what to do next."</p>
+                        <p>I've spent a lot of time learning how to ask better questions. In my experience, the most useful insights come from combining different methods and being genuinely curious about why people do what they do:</p>
                         <ul class="philosophy-questions">
-                            <li>Why do older doctors resist beautifully designed AI dashboards?</li>
-                            <li>Why do urban Indian women feel disconnected from sleek financial apps?</li>
-                            <li>Why does the same interface that delights Gen Z frustrate their parents?</li>
+                            <li>Why do doctors resist AI tools even when they're proven to be accurate?</li>
+                            <li>Why do users abandon products they claim to love?</li>
+                            <li>Why do some marketing campaigns that "should" work end up falling flat?</li>
                         </ul>
-                        <p class="insight">💡 At SAANS.AI, I redesigned a patient dashboard not by making it 'modern,' but by understanding that elderly users don't want expressive interfaces—they want clarity.</p>
+                        <p class="insight">💡 At SAANS.AI, I found that senior doctors actually associated visual complexity with unreliability. The fix wasn't better features; it was fewer features, presented more clearly.</p>
                     </div>
                 </div>
 
                 <div class="philosophy-post">
                     <div class="post-header">
-                        <div class="post-avatar">🔬</div>
+                        <div class="post-avatar">📊</div>
                         <div class="post-meta">
-                            <strong>The Experimenter's Eye</strong>
-                            <span>Every Decision Can Be Tested</span>
+                            <strong>Making It Matter</strong>
+                            <span>Insights are only useful if they change something</span>
                         </div>
                     </div>
                     <div class="post-content">
-                        <p>I'm not just a designer who read about behavioral science—I'm a behavioral scientist who fell in love with design.</p>
+                        <p>Research that sits in a report doesn't help anyone. I try to connect every finding to something actionable.</p>
                         <div class="stat-card">
-                            <div class="stat-highlight">20%</div>
-                            <p>Increase in METVY satisfaction through systematic A/B testing of behavioral nudges.</p>
+                            <div class="stat-highlight">72%</div>
+                            <p>of media's influence on entrepreneurship happens indirectly, through shaping perceptions rather than inspiring individuals directly. This completely changes how you'd approach ecosystem building.</p>
                         </div>
-                        <p>My superpower? I see the 'why' behind the 'what.'</p>
+                        <p>I'm always asking: okay, so what do we do with this?</p>
                     </div>
                 </div>
 
@@ -1397,14 +1257,14 @@
                     <div class="post-header">
                         <div class="post-avatar">🌏</div>
                         <div class="post-meta">
-                            <strong>The Cultural Translator</strong>
-                            <span>Design That Translates Mental Models</span>
+                            <strong>Context Matters</strong>
+                            <span>One size genuinely never fits all</span>
                         </div>
                     </div>
                     <div class="post-content">
-                        <p>Growing up in Rajasthan, studying in Delhi, working with global teams—I understand how culture shapes cognition.</p>
-                        <p class="highlight-text">When I created LakshmiBot for urban women's financial confidence, I didn't just design a chatbot. I identified how gendered social conditioning creates specific interaction patterns.</p>
-                        <p><em>My designs don't just translate languages; they translate mental models.</em></p>
+                        <p>Growing up in Rajasthan, studying in Delhi, then London, and working with teams across different markets has taught me something important: context shapes everything.</p>
+                        <p class="highlight-text">The same intervention that works brilliantly in one market might completely fail in another. Not because the features are different, but because the meaning is different.</p>
+                        <p>I try to understand the systems people operate within, not just the people themselves.</p>
                     </div>
                 </div>
 
@@ -1412,26 +1272,26 @@
                     <div class="post-header">
                         <div class="post-avatar">🚀</div>
                         <div class="post-meta">
-                            <strong>The Future I'm Building</strong>
-                            <span>Behavioral Design Systems</span>
+                            <strong>Where I'm headed</strong>
+                            <span>Building the bridge between research and real impact</span>
                         </div>
                     </div>
                     <div class="post-content">
-                        <p>Two years from now, I see myself as a Design Leader specializing in AI-human interaction—but not the kind who just makes chatbots friendlier.</p>
-                        <p class="future-vision">I want to be the designer companies call when they ask: <span>'Our AI is brilliant, but why don't people trust it?'</span></p>
+                        <p>I want to be the person organizations call when they need to understand the human side of complex problems. Whether that's product adoption, customer experience, organizational change, or entering new markets.</p>
+                        <p class="future-vision">My goal is pretty simple: <span>help turn behavioral science from something academic into something that actually gives companies an edge.</span></p>
                         <div class="future-goals">
-                            <h4>I'll be pioneering:</h4>
+                            <h4>Things I'm particularly interested in:</h4>
                             <div class="goal-item">
                                 <span class="goal-icon">🎯</span>
-                                <span>AI interfaces that adapt to cultural contexts, not just user preferences</span>
+                                <span>How to make AI adoption work better (hint: it's usually not a technology problem)</span>
                             </div>
                             <div class="goal-item">
                                 <span class="goal-icon">🧩</span>
-                                <span>Systems that acknowledge human irrationality as a feature, not a bug</span>
+                                <span>Consumer insights that go deeper than what surveys can tell you</span>
                             </div>
                             <div class="goal-item">
                                 <span class="goal-icon">🌟</span>
-                                <span>Products for India's next billion users—people my previous designs couldn't reach</span>
+                                <span>Designing for emerging markets where behavioral contexts are unique</span>
                             </div>
                         </div>
                     </div>
@@ -1440,10 +1300,10 @@
 
             <div class="philosophy-footer">
                 <p class="manifesto">
-                    "In a world racing toward AI and automation, someone needs to ensure technology still feels... human. That interfaces spark joy, not just complete tasks. That our digital world reflects our diversity, not flattens it."
+                    "In a world overflowing with data, the real advantage isn't having more information. It's understanding what it actually means for human behavior."
                 </p>
-                <p class="signature">That's not just what I want to do—that's who I am.</p>
-                <p class="sign-off">I'm Aditi Jain, and I'm ready to design the future.</p>
+                <p class="signature">That's what I try to do.</p>
+                <p class="sign-off">I'm Aditi, and I help turn behavioral insights into business results.</p>
             </div>
         </div>
     </div>
@@ -1452,9 +1312,7 @@
     <div class="modal" id="projectModal">
         <button class="modal-close" onclick="closeModal()">×</button>
         <div class="modal-content">
-            <div class="modal-image" id="modalImage">
-                📱
-            </div>
+            <div class="modal-image" id="modalImage">📱</div>
             <div class="modal-details">
                 <div class="modal-header">
                     <div class="modal-profile-pic">🧠</div>
@@ -1473,33 +1331,62 @@
     </div>
 
     <script>
-        // Project Data - 9 Core Projects
+        // Project Data - More conversational, human descriptions
         const projects = [
-       {
-  
-image: 'Sunk_cost.png',
-    title: 'Sunk Cost Fallacy in Entrepreneurial Decision-Making',
-    description: 'Why do smart founders keep pouring money into failing ventures? It\'s not bad math, it\'s psychology. When entrepreneurs have already invested significant time and money, walking away feels like admitting failure. Add public pitches, LinkedIn updates, and promises to early backers, and suddenly quitting isn\'t just a financial loss, it\'s a reputational one. I proposed GOAR (Growth-Oriented Assumption Review), a debiasing tool that borrows from an unexpected place: CIA intelligence analysis. The idea was to combine structured assumption-checking (making hidden beliefs visible) with promotion-focused thinking (shifting from "what will I lose?" to "what could I gain?"). Applies to investment decisions, pivot timing, and resource allocation in early-stage ventures.',
-    tags: ['BehavioralScience', 'Research', 'Entrepreneurship', 'CognitiveBias', 'DecisionMaking'],
-    likes: 524,
-    comments: 73,
-    pdfLink: 'https://jguedu-my.sharepoint.com/:b:/g/personal/20jgbs-ajain1_postjgu_edu_in/IQCUjy0TuYBlQbwOGMdiHh44Aau2ah1wHmFHP56aNlGRhJE?e=DLCKrE'
-},
+            {
+                icon: '📊',
+                image: 'Media_Story_Prevalence.png',  
+                title: 'How Success Stories Actually Influence Entrepreneurs',
+                description: 'For my MSc dissertation, I wanted to understand whether all those startup success stories in the media actually inspire people to become entrepreneurs. I analyzed data from 43 countries over 15 years, and found something surprising: 72% of the effect happens indirectly. Media doesn\'t really inspire individuals directly. Instead, it shapes how communities perceive entrepreneurship, which then creates better conditions for founders. This matters because it completely changes how governments and organizations should think about promoting entrepreneurship.',
+                tags: ['Research', 'Strategy', 'PanelData', 'Entrepreneurship'],
+                likes: 612,
+                comments: 94, 
+                pdfLink: 'https://jguedu-my.sharepoint.com/:b:/g/personal/20jgbs-ajain1_postjgu_edu_in/IQBWlqGFGixLRbYHH4Gt-KZDARdFZYwO5iejXDjQmmeUalE?e=eOvhae'
+            },
             {
                 icon: '🏥',
-image: 'Saans.AI.png',
-                title: 'SAANS.AI Healthcare Dashboard',
-                description: 'Transformed how 15+ doctors interact with AI predictions! Mixed-methods research revealed the truth: senior doctors don\'t resist AI, they resist interfaces that don\'t respect their expertise. My redesign? 30% faster task completion through behavioral nudges + custom visualizations that speak doctor, not tech. The magic: micro-interactions that reduce anxiety around AI predictions while maintaining clinical sophistication. Result: Adoption jumped from resistance to partnership.',
-                tags: ['Healthcare AI', 'Behavioral Research', 'Journey Mapping', '30% Improvement'],
+                image: 'Saans.AI.png',
+                title: 'Why Doctors Were Rejecting a Perfectly Good AI Tool',
+                description: 'SAANS.AI had built a solid healthcare AI platform, but experienced doctors weren\'t using it. Through interviews with 15+ healthcare professionals in India and the US, I discovered something counterintuitive: senior physicians were actually associating the visually complex interface with unreliability. They didn\'t trust it because it looked too busy. The solution was to strip away features and simplify everything. Task completion improved by 30%. Sometimes the answer is less, not more.',
+                tags: ['UserResearch', 'Healthcare', 'AI Adoption', 'ProductStrategy'],
                 likes: 342,
                 comments: 28
             },
             {
-           icon: '💰',
-    figmaEmbed: 'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/qu8cM3YJF1BKUOb7h70g30/Fin-Savvy-Youth?node-id=1-2062&p=f&t=sV6XxhcP8LBu4dlo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2062',
-    title: 'Fin Savvy Youth - Financial App',
-                description: 'Designed financial decision-making app for young professionals. The key insight driving my design: unlike traditional budgeting apps that shame users after overspending, Fin Savvy Youth positions AI as a supportive coach, predicting and preventing financial mistakes before they happen. This empowerment-over-restriction approach, combined with WCAG-compliant accessibility, creates sustainable behavior change for first-time investors. Monochromatic foundation reflects how they interact with financial tools - quickly, frequently, in professional contexts. Prioritized clarity over decoration, respecting time constraints and sophisticated ambitions.',
-                tags: ['FinTech', 'Behavioral Economics', 'Youth Banking', 'Minimalist Design'],
+                icon: '🧠',
+                image: 'Sunk_cost.png',
+                title: 'Why Smart Founders Keep Investing in Failing Startups',
+                description: 'This project started with a question: why do intelligent, experienced founders keep pouring money into ventures that clearly aren\'t working? It\'s not bad math. It\'s psychology. I developed GOAR (Growth-Oriented Assumption Review), a framework that adapts techniques from CIA intelligence analysis to help entrepreneurs check their assumptions and make clearer decisions. The key insight was that you need to address both the cognitive part (flawed thinking) and the emotional part (identity, reputation) at the same time.',
+                tags: ['BehavioralScience', 'Entrepreneurship', 'DecisionMaking', 'Framework'],
+                likes: 524,
+                comments: 73,
+                pdfLink: 'https://jguedu-my.sharepoint.com/:b:/g/personal/20jgbs-ajain1_postjgu_edu_in/IQCUjy0TuYBlQbwOGMdiHh44Aau2ah1wHmFHP56aNlGRhJE?e=DLCKrE'
+            },
+            {
+                icon: '📈',
+                image: 'Calender.png',
+                title: 'Getting Low Income Families to Actually Save Money',
+                description: 'We wanted to help low to middle income households in India build savings habits. After interviewing guards, shopkeepers, and small business owners in Delhi & Kota, we realized saving isn\'t really a knowledge problem. People know they should save. It\'s a habit problem. So we built a calendar based system using the familiar "gullak" (piggy bank) concept, with nudges timed to evening routines when people check their phones anyway. Our A/B testing showed that goal oriented framing worked way better than simple tracking.',
+                tags: ['BehavioralIntervention', 'FinTech', 'Testing', 'EmergingMarkets'],
+                likes: 298,
+                comments: 31
+            },
+            {
+                icon: '🚀',
+                image: 'image.png',
+                title: 'Building an AI Decision Coach (Work in Progress)',
+                description: 'I\'m currently building an AI powered system that helps people make better decisions by walking them through a structured process: defining the real problem, surfacing hidden assumptions, spotting cognitive biases, and considering alternatives. The biggest lesson so far? Scripted AI responses feel robotic and unhelpful. The system needs to understand coaching principles, not just follow a script. Still figuring this one out, but it\'s been a fascinating challenge.',
+                tags: ['Product', 'AI', 'DecisionScience', 'WorkInProgress'],
+                likes: 412,
+                comments: 56,
+                figmaLink: 'https://www.figma.com/design/kTBHZBwAXRZInRiLex1IAL/Blinded-Life-path?node-id=3-615&p=f&t=8YfA3Pgf5DGOCsLH-0'
+            },
+            {
+                icon: '💰',
+                figmaEmbed: 'https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/qu8cM3YJF1BKUOb7h70g30/Fin-Savvy-Youth?node-id=1-2062&p=f&t=sV6XxhcP8LBu4dlo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2062',
+                title: 'A Financial App That Doesn\'t Make You Feel Bad',
+                description: 'Most budgeting apps shame you after you overspend. That doesn\'t actually help anyone change their behavior. For this project, I designed a financial app for young professionals (22 to 30) that positions the AI as a supportive coach, predicting and preventing mistakes before they happen. The target user: someone earning around ₹45K per month who wants to build wealth but struggles with impulse purchases. Empowerment over restriction.',
+                tags: ['ProductStrategy', 'FinTech', 'BehavioralDesign', 'ConsumerInsights'],
                 likes: 389,
                 comments: 45,
                 figmaLink: 'https://www.figma.com/proto/qu8cM3YJF1BKUOb7h70g30?node-id=0-1&t=ppKROhh7HCAs34ct-6',
@@ -1507,142 +1394,75 @@ image: 'Saans.AI.png',
             },
             {
                 icon: '💬',
-image: 'LakshmiBot.png',
-                title: 'LakshmiBot - Financial Confidence Chatbot',
-                description: 'LakshmiBot is a conversational AI that uses story-based learning to build financial confidence. Instead of teaching financial concepts directly, users help fictional characters like "Priya" navigate money decisions—learning through empathy, not instruction.',
-                tags: ['Cultural UX', 'Behavioral Economics', 'Gender-inclusive Design', 'Conversational AI'],
+                image: 'LakshmiBot.png',
+                title: 'Teaching Financial Confidence Through Stories',
+                description: 'LakshmiBot tackles a specific problem: how do you help women build financial confidence when the barrier isn\'t knowledge but social conditioning? Instead of lecturing about finance, the chatbot lets users help fictional characters navigate money decisions. You learn through empathy, not instruction. It turns out that confidence barriers need different interventions than knowledge barriers. This project taught me a lot about designing for emotional, not just functional, needs.',
+                tags: ['ConversationalAI', 'FinancialInclusion', 'BehavioralDesign', 'Gender'],
                 likes: 456,
                 comments: 67,
                 canvaLink: 'https://www.canva.com/design/DAGgf4eFDnk/po9VfPNhSUYA6zxFkJCfUA/view?utm_content=DAGgf4eFDnk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b02f69e41',
                 videoLink: 'https://jguedu-my.sharepoint.com/:v:/g/personal/20jgbs-ajain1_postjgu_edu_in/IQC8150Bj0zITpEBsM8bZun9ATfkHAz-h3RB6VZntH2C8xU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=RqlGdn'
-
-            },
-            {
-                icon: '📊',
-image: 'image.png',
-                title: 'Decision Buddy - Blinded Life Path (In Progress)',
-                description: 'We make countless decisions daily, yet our minds work against us: anchoring on first impressions, seeking confirmation of what we already believe, letting emotions cloud judgment. The result? Paralysis, poor choices, regret. I am building something to change that. Based on a decision science framework, it guides users to define the real decision, uncover hidden biases, then correct course: by shifting how you think or restructuring how you see options. The goal is straightforward: help people make the best decisions given circumstances.',
-                tags: ['Work in Progress', 'Decision Science', 'Progressive Disclosure', 'Behavioral Design'],
-                likes: 412,
-                comments: 56,
-                figmaLink: 'https://www.figma.com/design/kTBHZBwAXRZInRiLex1IAL/Blinded-Life-path?node-id=3-615&p=f&t=8YfA3Pgf5DGOCsLH-0'
-            },
-            {
-                icon: '🔍',
-image: 'Media_Story_Prevalence.png',  
-                title: 'Through the Perceptual Lens - MSc Dissertation',
-                description: 'My LSE dissertation examining how entrepreneurial success narratives in media relate to opportunity-driven entrepreneurship through community perceptions. Analysis of 43 countries (2003-2018) revealed that 72% of media\'s association operates through perceptual channels - proving that stories shape ecosystems.',
-                tags: ['MSc Dissertation', 'Media Effects', 'Entrepreneurial Ecosystems', 'Limited Effects Theory'],
-                likes: 612,
-                comments: 94, 
-              pdfLink: 'https://jguedu-my.sharepoint.com/:b:/g/personal/20jgbs-ajain1_postjgu_edu_in/IQBWlqGFGixLRbYHH4Gt-KZDARdFZYwO5iejXDjQmmeUalE?e=eOvhae'
-            },
-            {
-                icon: '🎯',
-image: 'Calender.png',
-                title: 'Savings Calender - Group Project (In progress)',
-                description: 'Designed and created a platform to improve financial savings among low-middle income households in India using gamification, behavioral nudges, visual and interactive design. Currently in testing phase!',
-                tags: ['A/B Testing', 'Platform Design', 'Behavioral Nudges', 'Data-Driven'],
-                likes: 298,
-                comments: 31
             },
             {
                 icon: '🧪',
-image: 'Framing.png', 
-                title: 'Framing Effect Research',
-                description: 'Conducted experimental research on how emotional framing influences decision-making. Field experiment with 52 participants revealed predictive irrationality patterns - 57.7% preferred service fee framing over mathematically equivalent gamble framing. This research demonstrates how presentation context fundamentally shapes choices, proving that how we frame options matters more than the options themselves.',
-                tags: ['Behavioral Research', 'Cognitive Bias', 'Experimental Design', 'Decision Science'],
+                image: 'Framing.png', 
+                title: 'Proving That How You Say It Matters More Than What You Say',
+                description: 'I ran an experiment with 52 participants where I gave them two options that were mathematically identical but framed differently: one as a "gamble" and one as a "service fee." Even though the expected cost was exactly the same, 57.7% preferred the service fee version. This is a classic framing effect, but seeing it play out with real data was eye opening. It has huge implications for pricing, product positioning, and how you communicate anything, really.',
+                tags: ['Experiment', 'CognitiveBias', 'ConsumerBehavior', 'Research'],
                 likes: 634,
                 comments: 102, 
-              pdfLink: 'https://jguedu-my.sharepoint.com/:b:/g/personal/20jgbs-ajain1_postjgu_edu_in/IQDmGPv8iB_ETZwOXc3fPNdnAeRMBl5TlTgw3-4c-lE7HsI?e=6ZO8M7'
+                pdfLink: 'https://jguedu-my.sharepoint.com/:b:/g/personal/20jgbs-ajain1_postjgu_edu_in/IQDmGPv8iB_ETZwOXc3fPNdnAeRMBl5TlTgw3-4c-lE7HsI?e=6ZO8M7'
             },
             {
                 icon: '👥',
-                title: 'User Research & Context Mapping',
-                description: 'Conducted extensive user interviews for METVY and SAANS.AI, revealing a fundamental truth: context matters more than features. At SAANS.AI, I led a comprehensive user research initiative evaluating 11 healthcare professional interviews across India (government and private) and US markets. Developed a multi-dimensional assessment framework grading interviews on depth, methodology rigor, actionability, and user segment representativeness.. At METVY, found that the same gamification feature delighted students but frustrated professionals. These insights shaped my philosophy: one size never fits all. Design must adapt to user context, not force users to adapt to design.',
-                tags: ['User Research', 'Contextual Inquiry', 'METVY', 'SAANS.AI'],
+                title: 'Learning to Listen Better Through User Research',
+                description: 'Across my work at SAANS.AI and METVY, I\'ve interviewed dozens of users in very different contexts: doctors in government hospitals, private clinic owners, students, working professionals. The biggest lesson? Context matters more than features. The same gamification that excited students at METVY frustrated professionals. The same AI dashboard that impressed junior doctors made senior physicians suspicious. Understanding why requires going beyond what people say to what they actually do and feel.',
+                tags: ['UserResearch', 'ConsumerInsights', 'CrossCultural', 'Qualitative'],
                 likes: 223,
                 comments: 29
             }
         ];
 
-        // Switch tabs - Define globally
+        // Tab switching
         window.switchTab = function(element, type) {
-            // Update active tab
             document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
             element.classList.add('active');
             
-            // Get all sections
             const postsGrid = document.getElementById('postsGrid');
             const achievementsSection = document.getElementById('achievementsSection');
             const processSection = document.getElementById('processSection');
             const skillsSection = document.querySelector('.skills-section');
             
-            // Hide ALL sections first
             if (postsGrid) postsGrid.style.display = 'none';
             if (achievementsSection) achievementsSection.style.display = 'none';
             if (processSection) processSection.style.display = 'none';
             if (skillsSection) skillsSection.style.display = 'none';
             
-            // Show ONLY the selected content
             if (type === 'projects') {
-                // Show projects grid AND skills section
-                if (postsGrid) {
-                    postsGrid.style.display = 'grid';
-                    loadProjects();
-                }
-                if (skillsSection) {
-                    skillsSection.style.display = 'block';
-                }
+                if (postsGrid) { postsGrid.style.display = 'grid'; loadProjects(); }
+                if (skillsSection) { skillsSection.style.display = 'block'; }
             } else if (type === 'process') {
-                // Show ONLY process section
-                if (processSection) {
-                    processSection.style.display = 'block';
-                }
+                if (processSection) { processSection.style.display = 'block'; }
             } else if (type === 'achievements') {
-                // Show ONLY achievements section
-                if (achievementsSection) {
-                    achievementsSection.style.display = 'block';
-                }
+                if (achievementsSection) { achievementsSection.style.display = 'block'; }
             }
         }
 
-        // Add Philosophy Modal Functions
+        // Philosophy modal
         window.openPhilosophyModal = function(topic) {
-            const modalContent = {
-                'behavioral': {
-                    title: 'The Behavioral Lens',
-                    content: 'I see design through the lens of human behavior. Every interface decision is an opportunity to understand why people do what they do, not just what they do.'
-                },
-                'cultural': {
-                    title: 'Cultural Translation',
-                    content: 'Design must translate mental models, not just languages. Growing up in Rajasthan and working globally taught me that the same interface can mean different things to different cultures.'
-                },
-                'experimental': {
-                    title: 'The Experimenter\'s Eye',
-                    content: 'Every design decision can and should be tested. I don\'t assume; I experiment. Data tells us what works, but behavioral science tells us why.'
-                },
-                'ai-human': {
-                    title: 'AI-Human Interaction',
-                    content: 'The future isn\'t about making AI more human-like, but about making AI interactions more humane. Trust isn\'t built through mimicry but through transparency and respect.'
-                },
-                'systems': {
-                    title: 'Behavioral Design Systems',
-                    content: 'I\'m pioneering design frameworks that embed psychological principles from the ground up—systems that maintain behavioral consistency, not just visual consistency.'
-                },
-                'future': {
-                    title: 'The Future I\'m Building',
-                    content: 'In two years, I\'ll be the designer companies call when they need someone who understands not just pixels, but people. Someone who designs for irrationality as a feature, not a bug.'
-                }
+            const content = {
+                'research': { title: 'Research', content: 'I combine quantitative methods (stats, experiments, A/B testing) with qualitative depth (interviews, observation) to find insights that surveys alone would miss.' },
+                'strategy': { title: 'Strategy', content: 'I try to connect every research finding to something actionable. Insights that stay in reports don\'t help anyone.' },
+                'product': { title: 'Product', content: 'I\'ve worked with engineers, designers, and stakeholders to turn behavioral insights into actual features. I understand the product lifecycle from discovery through iteration.' },
+                'insights': { title: 'Insights', content: 'I focus on understanding the "why" behind behavior: the cognitive biases, emotional drivers, and contextual factors that determine whether something succeeds or fails.' },
+                'experimentation': { title: 'Testing', content: 'I believe in testing before committing. A/B tests, pilots, small experiments. It\'s better to find out something doesn\'t work early than late.' },
+                'impact': { title: 'Impact', content: 'I measure success by behavioral outcomes, not just satisfaction scores. Did people actually change what they do? That\'s what matters.' }
             };
-
-            const topic_data = modalContent[topic];
-            if (topic_data) {
-                alert(`${topic_data.title}\n\n${topic_data.content}`);
-            }
+            const data = content[topic];
+            if (data) alert(`${data.title}\n\n${data.content}`);
         }
 
-        // Load projects into grid
+        // Load projects
         function loadProjects() {
             const grid = document.getElementById('postsGrid');
             grid.innerHTML = '';
@@ -1652,251 +1472,125 @@ image: 'Framing.png',
                 post.className = 'post';
                 post.onclick = () => openModal(index);
                 
-                // Create visual representations for each project
-                // Create visual representations for each project - ONLY EMOJI
-                let visualContent = `
-                    <div class="post-image project-${index + 1}">
-                        <div style="font-size: 72px; display: flex; align-items: center; justify-content: center; height: 100%;">
-                            ${project.icon}
-                        </div>
-                    </div>
-                `;
-              if (index === 0) { // Sunk Cost Fallacy
-                    visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;">
-                        </div>
-                              
-                            </div>
-                        </div>
-                    `;
-                } else if (index === 1) { // SAANS.AI
-                    visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;">
-                        </div>
-                              
-                                                            </div>
-                        </div>
-                    `;
-                } else if (index === 2) { // Fin Savvy Youth
-                    visualContent = `
-        <div class="post-image project-${index + 1}" style="padding: 0; overflow: hidden;">
-            <iframe 
-                src="${project.figmaEmbed}" 
-                style="width: 100%; height: 100%; border: none;"
-                allowfullscreen>
-            </iframe>
-        </div>
-                    `;
-                } else if (index === 3) { // LakshmiBot
-                   visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;">
-                        </div>
-                              
-                                                            </div>
-                        </div>
-                    `;
-                } else if (index === 4) { // Blinded Life Path
-                     visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;">
-                        </div>
-                              
-                            </div>
-                                </div>
-                                                       
-                        </div>
-                    `;
-                } else if (index === 5) { // MSc Dissertation
-                     visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;">
-                        </div>
-                                                           </div>
-                        </div>
-                    `;
-                } else if (index === 6) { // Savings Calender - Group Project (In progress)
-                       visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;">
-                        </div>
-                              
-                                                           </div>
-                        </div>
-                    `;
-                } else if (index === 7) { // Framing Effect Research
-                  visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;">
-                        </div>
-                        </div>
-                    `;
-                } else { // User Research
-                    visualContent = `
-                        <div class="post-image project-${index + 1}">
-                            <div class="post-image-content">
-                                                                <div style="font-size: 40px; margin: 10px 0;">👥</div>
-                                                          </div>
-                        </div>
-                    `;
+                let visual = '';
+                if (project.figmaEmbed) {
+                    visual = `<div class="post-image project-${index + 1}" style="padding: 0; overflow: hidden;"><iframe src="${project.figmaEmbed}" style="width: 100%; height: 100%; border: none;" allowfullscreen></iframe></div>`;
+                } else if (project.image) {
+                    visual = `<div class="post-image project-${index + 1}"><img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain; border-radius: inherit;"></div>`;
+                } else {
+                    visual = `<div class="post-image project-${index + 1}"><div style="font-size: 72px; display: flex; align-items: center; justify-content: center; height: 100%;">${project.icon}</div></div>`;
                 }
                 
-                post.innerHTML = visualContent + `
+                post.innerHTML = visual + `
                     <div class="post-overlay">
                         <div class="post-stat">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                            </svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                             ${project.likes}
                         </div>
                         <div class="post-stat">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-                            </svg>
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
                             ${project.comments}
                         </div>
                     </div>
                 `;
-                
                 grid.appendChild(post);
             });
         }
-// Open modal
-function openModal(index) {
-    const modal = document.getElementById('projectModal');
-    const project = projects[index];
 
-    const modalImageEl = document.getElementById('modalImage');
-    const modalTitleEl = document.getElementById('modalTitle');
-    const modalContentEl = document.getElementById('modalContent');
+        // Open modal
+        function openModal(index) {
+            const modal = document.getElementById('projectModal');
+            const project = projects[index];
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
 
-    // Set basic content
-    // Set basic content
-if (project.figmaEmbed) {
-    modalImageEl.innerHTML = `<iframe src="${project.figmaEmbed}" style="width: 100%; height: 100%; border: none;" allowfullscreen></iframe>`;
-} else if (project.image) {
-    modalImageEl.style.background = '#ffffff';
-    modalImageEl.style.padding = '20px';
-    modalImageEl.innerHTML = `<img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain;">`;
-} else {
-    modalImageEl.style.background = '';
-    modalImageEl.style.padding = '';
-    modalImageEl.innerHTML = '';
-    modalImageEl.textContent = project.icon;
-}
-    modalTitleEl.textContent = project.title;
-    modalContentEl.textContent = project.description; // this also clears previous buttons
+            if (project.figmaEmbed) {
+                modalImage.innerHTML = `<iframe src="${project.figmaEmbed}" style="width: 100%; height: 100%; border: none;" allowfullscreen></iframe>`;
+            } else if (project.image) {
+                modalImage.style.background = '#ffffff';
+                modalImage.style.padding = '20px';
+                modalImage.innerHTML = `<img src="${project.image}" alt="${project.title}" style="width: 100%; height: 100%; object-fit: contain;">`;
+            } else {
+                modalImage.style.background = '';
+                modalImage.style.padding = '';
+                modalImage.innerHTML = '';
+                modalImage.textContent = project.icon;
+            }
 
-    // Add link buttons for projects with external links
-    if (project.figmaLink || project.canvaLink || project.loomLink || project.videoLink || project.pdfLink) {
-        const buttonContainer = document.createElement('div');
-        buttonContainer.style.marginTop = '16px';
-        buttonContainer.style.display = 'flex';
-        buttonContainer.style.gap = '12px';
-        buttonContainer.style.flexWrap = 'wrap';
+            modalTitle.textContent = project.title;
+            modalContent.textContent = project.description;
 
-        // Figma
-        if (project.figmaLink) {
-            const figmaButton = document.createElement('a');
-            figmaButton.href = project.figmaLink;
-            figmaButton.target = '_blank';
-            figmaButton.className = 'figma-link-btn';
-            figmaButton.innerHTML = `
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.19 0 2.34-.21 3.41-.6.3-.11.49-.4.49-.72 0-.43-.35-.78-.78-.78-.17 0-.33.06-.46.11-.91.33-1.78.49-2.66.49-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8c0 1.29-.33 2.56-.89 3.69-.12.24-.12.51.01.74.13.24.37.39.64.39.19 0 .38-.09.5-.25.7-1.39 1.04-2.96 1.04-4.57 0-5.52-4.48-10-10-10z"/>
-                </svg>
-                View in Figma
-            `;
-            buttonContainer.appendChild(figmaButton);
+            if (project.figmaLink || project.canvaLink || project.loomLink || project.videoLink || project.pdfLink) {
+                const btnContainer = document.createElement('div');
+                btnContainer.style.cssText = 'margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;';
+
+                if (project.figmaLink) {
+                    const btn = document.createElement('a');
+                    btn.href = project.figmaLink;
+                    btn.target = '_blank';
+                    btn.className = 'link-btn';
+                    btn.innerHTML = '🎨 View Prototype';
+                    btnContainer.appendChild(btn);
+                }
+                if (project.loomLink) {
+                    const btn = document.createElement('a');
+                    btn.href = project.loomLink;
+                    btn.target = '_blank';
+                    btn.className = 'link-btn';
+                    btn.style.background = 'linear-gradient(45deg, #625DF5, #825DF5)';
+                    btn.innerHTML = '🎥 Watch Demo';
+                    btnContainer.appendChild(btn);
+                }
+                if (project.canvaLink) {
+                    const btn = document.createElement('a');
+                    btn.href = project.canvaLink;
+                    btn.target = '_blank';
+                    btn.className = 'link-btn';
+                    btn.style.background = 'linear-gradient(45deg, #00c4cc, #7d2ae8)';
+                    btn.innerHTML = '📊 View Presentation';
+                    btnContainer.appendChild(btn);
+                }
+                if (project.videoLink) {
+                    const btn = document.createElement('a');
+                    btn.href = project.videoLink;
+                    btn.target = '_blank';
+                    btn.className = 'link-btn';
+                    btn.innerHTML = '🎬 Watch Video';
+                    btnContainer.appendChild(btn);
+                }
+                if (project.pdfLink) {
+                    const btn = document.createElement('a');
+                    btn.href = project.pdfLink;
+                    btn.target = '_blank';
+                    btn.className = 'link-btn';
+                    btn.innerHTML = '📄 Read Full Paper';
+                    btnContainer.appendChild(btn);
+                }
+                modalContent.appendChild(btnContainer);
+            }
+
+            const tagsContainer = document.getElementById('modalTags');
+            tagsContainer.innerHTML = '';
+            project.tags.forEach(tag => {
+                const tagEl = document.createElement('span');
+                tagEl.className = 'tag';
+                tagEl.textContent = '#' + tag;
+                tagsContainer.appendChild(tagEl);
+            });
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
 
-        // Loom
-        if (project.loomLink) {
-            const loomButton = document.createElement('a');
-            loomButton.href = project.loomLink;
-            loomButton.target = '_blank';
-            loomButton.className = 'figma-link-btn';
-            loomButton.style.background = 'linear-gradient(45deg, #625DF5, #825DF5)';
-            loomButton.innerHTML = `
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
-                    <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Watch Demo
-            `;
-            buttonContainer.appendChild(loomButton);
-        }
-
-        // Canva
-        if (project.canvaLink) {
-            const canvaButton = document.createElement('a');
-            canvaButton.href = project.canvaLink;
-            canvaButton.target = '_blank';
-            canvaButton.className = 'figma-link-btn';
-            canvaButton.style.background = 'linear-gradient(45deg, #00c4cc, #7d2ae8)';
-            canvaButton.innerHTML = `
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.19 0 2.34-.21 3.41-.6.3-.11.49-.4.49-.72 0-.43-.35-.78-.78-.78-.17 0-.33.06-.46.11-.91.33-1.78.49-2.66.49-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8c0 1.29-.33 2.56-.89 3.69-.12.24-.12.51.01.74.13.24.37.39.64.39.19 0 .38-.09.5-.25.7-1.39 1.04-2.96 1.04-4.57 0-5.52-4.48-10-10-10z"/>
-                </svg>
-                View in Canva
-            `;
-            buttonContainer.appendChild(canvaButton);
-        }
-
-        // 🔴 NEW: SharePoint video link
-        if (project.videoLink) {
-            const videoButton = document.createElement('a');
-            videoButton.href = project.videoLink;
-            videoButton.target = '_blank';
-            videoButton.className = 'figma-link-btn';
-            videoButton.innerHTML = `
-                🎥 Watch Video
-            `;
-            buttonContainer.appendChild(videoButton);
-        }
-
-    // PDF Button
-    if (project.pdfLink) {
-        const pdfButton = document.createElement('a');
-        pdfButton.href = project.pdfLink;
-        pdfButton.target = '_blank';
-        pdfButton.className = 'figma-link-btn';
-        pdfButton.innerHTML = `📄 View PDF`;
-        buttonContainer.appendChild(pdfButton);
-    }
-        // Attach buttons just under the description text
-        modalContentEl.appendChild(buttonContainer);
-    }
-
-    // Tags
-    const tagsContainer = document.getElementById('modalTags');
-    tagsContainer.innerHTML = '';
-    project.tags.forEach(tag => {
-        const tagEl = document.createElement('span');
-        tagEl.className = 'tag';
-        tagEl.textContent = '#' + tag.replace(/\s+/g, '');
-        tagsContainer.appendChild(tagEl);
-    });
-
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-
-        // Close modal
         window.closeModal = function() {
             document.getElementById('projectModal').classList.remove('active');
             document.body.style.overflow = 'auto';
         }
 
-        // Smooth scroll to philosophy section
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize projects on page load
             loadProjects();
             
-            // Set up smooth scroll
             const bioLink = document.querySelector('.bio-link');
             if (bioLink) {
                 bioLink.addEventListener('click', (e) => {
@@ -1905,26 +1599,9 @@ if (project.figmaEmbed) {
                 });
             }
 
-            // Close modal on escape key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    closeModal();
-                }
-            });
-
-            // Close modal on background click
-            document.getElementById('projectModal').addEventListener('click', (e) => {
-                if (e.target.id === 'projectModal') {
-                    closeModal();
-                }
-            });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+            document.getElementById('projectModal').addEventListener('click', (e) => { if (e.target.id === 'projectModal') closeModal(); });
         });
     </script>
-
-
-
-
-
-
-
-
+</body>
+</html>
