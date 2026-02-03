@@ -93,7 +93,7 @@ I think there's a real gap between academic behavioral science and practical app
 
 I'm always happy to chat about behavioral science, product research, or interesting problems you're trying to solve.
 
-📧 asvm61001@gmail.com  
+📧 aditijain61001@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/aditijain61001/)  
 
 ---
