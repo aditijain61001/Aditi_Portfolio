@@ -1522,8 +1522,9 @@
                 modalImage.textContent = project.icon;
             }
 
-            modalTitle.textContent = project.title;
-            modalContent.textContent = project.description;
+           modalTitle.textContent = project.title;
+modalContent.innerHTML = '';
+modalContent.appendChild(document.createTextNode(project.description));
 
             if ( project.lovableLink || project.figmaLink || project.canvaLink || project.loomLink || project.videoLink || project.pdfLink) {
                 const btnContainer = document.createElement('div');
