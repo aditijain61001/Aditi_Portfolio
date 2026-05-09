@@ -1525,10 +1525,18 @@
             modalTitle.textContent = project.title;
             modalContent.textContent = project.description;
 
-            if (project.figmaLink || project.canvaLink || project.loomLink || project.videoLink || project.pdfLink) {
+            if ( project.lovableLink || project.figmaLink || project.canvaLink || project.loomLink || project.videoLink || project.pdfLink) {
                 const btnContainer = document.createElement('div');
                 btnContainer.style.cssText = 'margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap;';
 
+                    if (project.lovableLink) {
+                        const btn = document.createElement('a');
+                        btn.href = project.lovableLink;
+                        btn.target = '_blank';
+                        btn.className = 'link-btn';
+                        btn.innerHTML = '🚀 View App';
+                        btnContainer.appendChild(btn);
+                    } 
                 if (project.figmaLink) {
                     const btn = document.createElement('a');
                     btn.href = project.figmaLink;
